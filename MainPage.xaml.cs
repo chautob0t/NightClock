@@ -66,7 +66,7 @@ namespace NightClock
             {
                 resetTextBoxes(5);
                 timeBlock5.Text = DateTime.Now.ToLongTimeString();
-                if (i == 50) i = 0;
+                if (i == 3000) i = 0;
             }
         }
 

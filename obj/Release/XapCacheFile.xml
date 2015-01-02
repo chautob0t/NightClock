@@ -1,14 +1,14 @@
-﻿<xapCache source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Bin\Release\NightClock_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="02/01/2015 11:11:11">
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\obj\Release\NightClock.dll" archivePath="NightClock.dll" lastWriteTime="02/01/2015 11:09:26" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="02/01/2015 07:55:12" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="02/01/2015 07:55:12" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="02/01/2015 07:55:12" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="02/01/2015 07:55:12" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="02/01/2015 07:55:12" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="02/01/2015 07:55:12" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="02/01/2015 07:55:12" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="02/01/2015 09:02:34" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Clock.png" archivePath="Clock.png" lastWriteTime="02/01/2015 11:07:29" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Clock300.png" archivePath="Clock300.png" lastWriteTime="02/01/2015 11:07:09" />
-  <file source="c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="02/01/2015 11:11:11" />
+﻿<xapCache source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Bin\Release\NightClock_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="03/01/2015 01:58:12">
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\obj\Release\NightClock.dll" archivePath="NightClock.dll" lastWriteTime="03/01/2015 01:58:11" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="02/01/2015 07:55:12" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="02/01/2015 07:55:12" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="02/01/2015 07:55:12" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="02/01/2015 07:55:12" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="02/01/2015 07:55:12" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="02/01/2015 07:55:12" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="02/01/2015 07:55:12" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="02/01/2015 09:02:34" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Clock.png" archivePath="Clock.png" lastWriteTime="02/01/2015 11:07:29" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Clock300.png" archivePath="Clock300.png" lastWriteTime="02/01/2015 11:07:09" />
+  <file source="C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="02/01/2015 11:11:11" />
 </xapCache>
