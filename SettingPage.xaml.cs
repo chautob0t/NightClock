@@ -37,6 +37,8 @@ namespace NightClock
         private void opacityValueSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             if (opacityValueSlider != null)
+            // need to check this if condition otherwise this event if fired while the slider is being constructed 
+            // and leads to a null reference exception since we try to access opcaityValueSlider.value
             {
                 brightness = opacityValueSlider.Value;
                 brightnes = (int)brightness;
