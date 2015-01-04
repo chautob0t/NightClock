@@ -17,3 +17,4 @@ c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\obj
 c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\obj\Debug\NightClock.dll
 c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\obj\Debug\NightClock.pdb
 c:\users\vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\obj\Debug\XapCacheFile.xml
+C:\Users\Vaibhav\documents\visual studio 2013\Projects\NightClock\NightClock\obj\Debug\SettingPage.g.cs

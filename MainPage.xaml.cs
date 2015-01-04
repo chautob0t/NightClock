@@ -9,12 +9,14 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Microsoft.Phone.Tasks;        // to use MarketPlace review task, email task
 using System.Windows.Threading;     // to use DispatcherTimer
+using System.IO.IsolatedStorage;    // for app brightness setting
 using NightClock.Resources;
 
 namespace NightClock
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
         // Constructor
         public MainPage()
         {
@@ -38,40 +40,66 @@ namespace NightClock
         // Tick event handler
         void d_Tick(object sender, EventArgs e)
         {
-            // a textblock is kept active of 600 ticks (or seconds)
+            // a textblock is kept active of [10 minutes] 600 ticks (or seconds) then reset and next one is activated
             // this could be done using FromMinutes(10) tick event but that way we cannot live update the seconds
             i++;
             dateTextBlock.Text = DateTime.Now.ToLongDateString();
             if (i >= 0 && i <= 600)
             {
-                resetTextBoxes(1);
+                //resetTextBoxes(1);
                 timeBlock1.Text = DateTime.Now.ToLongTimeString();
+                if (i == 600) 
+                {
+                    timeBlock1.Text = "";
+                    timeBlock2.Text = DateTime.Now.ToLongTimeString();
+                }
             }
             else if (i > 600 && i <= 1200)
             {
-                resetTextBoxes(2);
+                //resetTextBoxes(2);
                 timeBlock2.Text = DateTime.Now.ToLongTimeString();
+                if (i == 1200)
+                {
+                    timeBlock2.Text = "";
+                    timeBlock3.Text = DateTime.Now.ToLongTimeString();
+                }
             }
-            else if (i > 1200 && i <= 1800)
+            else if (i  > 1200 && i <= 1800)
             {
-                resetTextBoxes(3);
+                //resetTextBoxes(3);
                 timeBlock3.Text = DateTime.Now.ToLongTimeString();
+                if (i == 1800)
+                {
+                    timeBlock3.Text = "";
+                    timeBlock4.Text = DateTime.Now.ToLongTimeString();
+                }
             }
             else if (i > 1800 && i <= 2400)
             {
-                resetTextBoxes(4);
+                //resetTextBoxes(4);
                 timeBlock4.Text = DateTime.Now.ToLongTimeString();
+                if (i == 2400)
+                {
+                    timeBlock4.Text = "";
+                    timeBlock5.Text = DateTime.Now.ToLongTimeString();
+                }
             }
             else if (i > 2400 && i <= 3000)
             {
-                resetTextBoxes(5);
+                //resetTextBoxes(5);
                 timeBlock5.Text = DateTime.Now.ToLongTimeString();
-                if (i == 3000) i = 0;
+                if (i == 3000)
+                {
+                    i = 0;
+                    timeBlock5.Text = "";
+                    timeBlock1.Text = DateTime.Now.ToLongTimeString();
+                }
             }
         }
 
         // Function to reset other textblocks to create a moving text effect
-        void resetTextBoxes(int num)
+        // Not being used because it takes many lines
+        /* void resetTextBoxes(int num)
         {
             switch (num)
             {
@@ -116,7 +144,7 @@ namespace NightClock
                    // timeBlock2.Text = "";
                     break;
             }
-        }
+        }   */
 
         // Load data for the ViewModel Items
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -124,6 +152,18 @@ namespace NightClock
             if (!App.ViewModel.IsDataLoaded)
             {
                 App.ViewModel.LoadData();
+            }
+
+            if (settings.Contains("brightness"))
+            // always be carefull with the spellings of the keys in settings
+            // thanks @rishabh harit for finding this mistake
+            {
+                pivot.Opacity = (double)settings["brightness"];
+            }
+            else
+            {
+                //MessageBox.Show("lol");
+                pivot.Opacity = 0.3;
             }
         }
 
@@ -139,8 +179,16 @@ namespace NightClock
            ApplicationBar.MenuItems.Add(appBarMenuItem);
            ApplicationBarMenuItem appBarMenuItem2 = new ApplicationBarMenuItem("feedback");
            ApplicationBar.MenuItems.Add(appBarMenuItem2);
+           ApplicationBarMenuItem settingsNav = new ApplicationBarMenuItem("settings");
+           ApplicationBar.MenuItems.Add(settingsNav);
+           settingsNav.Click += settingsNav_Click;
            appBarMenuItem.Click += appBarMenuItem_Click;
            appBarMenuItem2.Click += appBarMenuItem2_Click;
+        }
+
+        void settingsNav_Click(object sender, EventArgs e)
+        {
+           NavigationService.Navigate(new Uri("/SettingPage.xaml", UriKind.Relative));
         }
 
         void appBarMenuItem2_Click(object sender, EventArgs e)

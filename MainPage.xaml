@@ -19,7 +19,7 @@
 
 
         <!--Pivot Control-->
-        <phone:Pivot Title="NIGHT CLOCK" Opacity="0.3">
+        <phone:Pivot x:Name="pivot" Title="NIGHT CLOCK" Opacity="0.3">
             <!--Pivot item one-->
             <phone:PivotItem Header="time" Opacity="0.1">
                 <Grid HorizontalAlignment="Stretch" Height="Auto" Margin="0" VerticalAlignment="Stretch" Width="Auto">

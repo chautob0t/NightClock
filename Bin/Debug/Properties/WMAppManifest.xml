@@ -1,24 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{2272eb40-b311-44fe-9cd1-d67d45b17dfb}" Title="NightClock" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="NightClock author" Description="Sample description" Publisher="NightClock" PublisherID="{c99f646c-abe3-4729-bc26-8601d907ca99}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <App xmlns="" ProductID="{2272eb40-b311-44fe-9cd1-d67d45b17dfb}" Title="NightClock" RuntimeType="Silverlight" Version="2.0.0.0" Genre="apps.normal" Author="Vaibhav Chauhan" Description="This is not just another night clock, its a bit different. The difference you must have noticed  by now, it is the extremely low brightness which is otherwise not available to the phone!&#xD;&#xA;This app is not only free, it is open sourced too." Publisher="Vaibhav Chauhan" PublisherID="{c99f646c-abe3-4729-bc26-8601d907ca99}">
+    <IconPath IsRelative="true" IsResource="false">Clock300.png</IconPath>
     <Capabilities>
-      <Capability Name="ID_CAP_NETWORKING" />
-      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
-      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
-      <Capability Name="ID_CAP_SENSORS" />
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
     </Capabilities>
     <Tasks>
-      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" ActivationPolicy="Resume" />
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="NightClockToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">Clock300.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Clock.png</BackgroundImageURI>
           <Title>NightClock</Title>
           <BackContent></BackContent>
           <BackBackgroundImageURI></BackBackgroundImageURI>
